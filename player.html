@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+  <title>Music Player</title>
+</head>
+<body>
+  <!-- Music player container -->
+  <div class="music-player">
+    <!-- Display song information and cover image -->
+    <div class="player-info">
+      <img id="cover" src="default-cover.jpg" alt="Cover Image">
+      <h2 id="title">Title of the Song</h2>
+      <h3 id="artist">Artist Name</h3>
+    </div>
+    
+    <!-- Audio element to play the music -->
+    <audio id="audio" src="your-song.mp3"></audio> <!-- Replace with the actual song file -->
+
+    <!-- Progress bar container -->
+    <div class="progress-container">
+        <div id="progress" class="progress"></div>
+    </div>
+
+    <!-- Time display -->
+    <div class="time-container">
+        <span id="current-time">0:00</span>
+        <span id="duration">0:00</span>
+    </div>
+    
+    <!-- Control buttons -->
+    <div class="controls">
+      <button id="repeat" class="control-button" aria-label="Repeat"><i class="fas fa-repeat"></i></button>
+      <button id="prev" class="control-button" aria-label="Previous Song"><i class="fas fa-backward"></i></button>
+      <button id="play" class="control-button" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
+      <button id="next" class="control-button" aria-label="Next Song"><i class="fas fa-forward"></i></button>
+      <button id="volume" class="control-button" aria-label="Volume"><i class="fas fa-volume-up"></i></button>
+      <button class="more-options" aria-label="More Options"><i class="fas fa-ellipsis-v"></i></button>
+    </div>
+  </div>
+
+  <!-- Link to your JavaScript file -->
+  <script src="script.js"></script> 
+</body>
+</html>
